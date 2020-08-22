@@ -1,0 +1,2 @@
+cppcheck --check-config --enable=all -I /usr/include -I /usr/include/c++/10.1.0 multreturns.cpp
+clang++ -g -fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer -O1 multreturns.cpp -o program.exe
